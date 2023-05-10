@@ -1,14 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>12354567821233</p>
-    <p>1111123</p>
+    <header>
+      <nav>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#about" class="btn-scroll">About</a>
+          </li>
+          <il class="nav__item">
+            <a class="nav__link" href="#work-experience">Work Experience</a>
+          </il>
+          <il class="nav__item">
+            <a class="nav__link" href="#skill">Skill</a>
+          </il>
+          <il class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </il>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="about" class="content">
+        <div>
+          <img
+            class="profile"
+            src="https://i.postimg.cc/52phvp79/2.png"
+            alt="圖片"
+          />
+          <h1>姚澤睿</h1>
+          <h2>UI/UX Designer</h2>
+          <p>
+            努力精進自己的設計能力，學習各種不同的設計技能，使自己能夠應對各種挑戰和需求。
+          </p>
+          <button class="btn content-btn btn--scroll-to">See my resume↘</button>
+        </div>
+      </div>
+    </header>
+    <!--   experience -->
+    <section id="work-experience" class="experience">
+      <div class="wrapper">
+        <h1>Work experience</h1>
+        <!--       experience1 -->
+        <div class="experience-wrapper">
+          <div>
+            <h3>Web Designer</h3>
+            <p>國立臺東大學</p>
+            <p>2021/9~2022/6</p>
+          </div>
+          <div class="experience-description">
+            <ol>
+              <li>協助臺東大學研討會的網頁設計與製作。</li>
+              <li>負責該學系網站的設計與維護。</li>
+              <li>與團隊成員合作，討論並改善網頁設計的細節與品質。</li>
+              <li>確保網頁設計符合設計目標與使用者需求。</li>
+            </ol>
+          </div>
+        </div>
+        <div class="experience-wrapper">
+          <div>
+            <h3>Web Designer</h3>
+            <p>社團法人台灣敏捷協會</p>
+            <p>2022/9~2022/12</p>
+          </div>
+          <div class="experience-description">
+            <ol>
+              <li>設計網頁視覺風格，包括色彩、字型、排版等。</li>
+              <li>建立網頁的架構和版面，確保設計風格和使用者體驗一致。</li>
+              <li>使用設計軟體，如Sketch、Figma等，製作網頁元素。</li>
+              <li>協助製作宣傳PPT，包括排版、圖片處理、動畫設計等。</li>
+              <li>根據宣傳需求，調整PPT的視覺風格和內容呈現方式。</li>
+              <li>與團隊成員、客戶或合作夥伴溝通，收集反饋並進行修改。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--     skill -->
+    <section id="skill">
+      <div class="wrapper">
+        <h1>Skill</h1>
+        <div class="operations">
+          <div class="operations__tab-container">
+            <button
+              class="btn operations__tab operations__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>UI/UX
+            </button>
+            <button class="btn operations__tab" data-tab="2">
+              <span>02</span>視覺傳達
+            </button>
+            <button class="btn operations__tab" data-tab="3">
+              <span>03</span>前端程式
+            </button>
+          </div>
+
+          <div
+            class="operations__content operations__content--1 operations__content--active"
+          >
+            <h5 class="operations__header">具備良好UI／UX能力</h5>
+            <ol>
+              <li>
+                擁有UI設計相關的經驗，能夠輕鬆地使用Photoshop、Illustrator等設計軟體完成高質量的設計作品。
+              </li>
+              <li>能夠熟悉地使用Figma進行Wireframe、Mockup、Prototype等設計</li>
+              <li>
+                熟悉HTML、CSS等前端語言，能夠適應基本的前端開發任務，如頁面排版、CSS樣式編寫等。
+              </li>
+              <li>
+                良好的溝通能力和團隊合作精神，能夠與工程師建立良好的溝通和協作，確保設計和開發之間的合作。
+              </li>
+              <li>
+                對UI設計和前端開發充滿熱情，並不斷地學習和探索最新的設計和技術趨勢，以保持競爭力和進步。
+              </li>
+            </ol>
+          </div>
+
+          <div class="operations__content operations__content--2">
+            <h5 class="operations__header">視覺傳達設計</h5>
+            <ol>
+              <li>
+                熟悉多種平面設計軟體，如Photoshop、Illustrator、InDesign等。
+              </li>
+              <li>
+                知道如何使用視覺效果來引導使用者的注意力，例如透過色彩和排版來強調主要訊息。
+              </li>
+              <li>
+                能夠與團隊成員溝通，以確保視覺設計符合品牌定位和用戶需求。
+              </li>
+              <li>
+                有一定的創意思維和解決問題的能力，能夠提供創新的視覺解決方案。
+              </li>
+              <li>
+                持續關注設計趨勢和最新的視覺傳達技術，以提高自己的設計能力和創意水平。
+              </li>
+            </ol>
+          </div>
+          <div class="operations__content operations__content--3">
+            <h5 class="operations__header">前端程式開發</h5>
+            <ol>
+              <li>熟悉HTML、CSS、JavaScript等前端程式語言。</li>
+              <li>了解基礎前端框架，如React，來加速網站開發。</li>
+              <li>
+                熟悉使用開發工具，如Visual Studio
+                Code，來編輯程式碼、除錯及測試應用。
+              </li>
+              <li>
+                能夠撰寫具有響應式設計的網頁，讓網站能夠在不同的螢幕尺寸和設備上呈現最佳的使用體驗。
+              </li>
+              <li>
+                持續學習新的前端技術，如ES6語法、React
+                Hooks等，來不斷提高程式開發的能力。
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="wrapper">
+        <h1>Education</h1>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrapper">
+        <h1>Contact</h1>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
