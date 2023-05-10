@@ -71,7 +71,7 @@ header {
   max-width: 950px;
   overflow: hidden;
   color: #454545;
-  height: 100vh;
+  height: 100%vh;
 }
 .btn {
   display: inline-block;
