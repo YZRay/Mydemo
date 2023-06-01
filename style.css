@@ -125,6 +125,9 @@ section {
   padding-top: 4rem;
   align-items: center;
 }
+.experience-description ol:last-child {
+  margin-top: 40px;
+}
 @media (min-width: 480px) {
   .experience-wrapper {
     display: grid;
@@ -222,4 +225,9 @@ section {
 }
 .operations__content ol li {
   margin-top: 12px;
+}
+/* education */
+.education-wrapper {
+  margin-top: 20px;
+  line-height: 28px;
 }
