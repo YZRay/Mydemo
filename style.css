@@ -49,13 +49,13 @@ nav a {
   list-style: none;
 }
 .nav__item {
-  marginleft: 4rem;
+  margin-left: 4rem;
 }
 .nav__link:hover {
   color: #335cff;
 }
 header {
-  positive: relative;
+  position: relative;
   padding-top: 50px;
   text-align: center;
   background: #fff;
