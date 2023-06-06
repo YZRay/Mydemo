@@ -227,7 +227,46 @@ section {
   margin-top: 12px;
 }
 /* education */
+
 .education-wrapper {
   margin-top: 20px;
   line-height: 28px;
+}
+/* Contact */
+.form {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+}
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea {
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: inherit;
+  color: #484848;
+}
+.form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 1px solid #335cff;
+}
+.form textarea {
+  resize: none;
+}
+.form label {
+  margin-bottom: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #454545;
 }
