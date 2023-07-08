@@ -333,3 +333,16 @@ section {
   vertical-align: middle;
   color: #454545;
 }
+/* animated */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.content,
+.navbar {
+  animation: fadeIn 1s ease-in-out; /* 使用fadeIn動畫 */
+}

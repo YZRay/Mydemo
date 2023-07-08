@@ -45,3 +45,4 @@ const navLinks = document.querySelector(".nav__links");
 navbarToggle.addEventListener("click", () => {
   navLinks.classList.toggle("collapsed");
 });
+//fade in
