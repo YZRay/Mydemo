@@ -37,3 +37,11 @@ document.querySelector(".nav__links").addEventListener("click", function (e) {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
+
+// nav
+const navbarToggle = document.querySelector(".navbar-toggle");
+const navLinks = document.querySelector(".nav__links");
+
+navbarToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("collapsed");
+});

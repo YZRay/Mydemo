@@ -54,6 +54,69 @@ nav a {
 .nav__link:hover {
   color: #335cff;
 }
+
+/* nav RWD */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(241, 246, 249, 0.95);
+  top: 0;
+  padding: 20px;
+  z-index: 100;
+}
+.svg-class {
+  stroke: #212a3e;
+  width: 36px;
+  height: auto;
+}
+
+.navbar-toggle {
+  display: none; /* 預設隱藏折疊按鈕 */
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #212a3e;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* 在小螢幕下顯示折疊按鈕 */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav__links {
+    display: none; /* 隱藏連結清單 */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .nav__item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .collapsed {
+    display: flex; /* 在折疊狀態下顯示連結清單 */
+  }
+}
+/* nav */
 header {
   position: relative;
   padding-top: 50px;
