@@ -346,3 +346,12 @@ section {
 .navbar {
   animation: fadeIn 1s ease-in-out; /* 使用fadeIn動畫 */
 }
+
+/* fade in */
+.fade-in {
+  opacity: 0; /* 初始透明度為 0 */
+  transition: opacity 0.5s ease-in-out;
+}
+.active {
+  opacity: 1;
+}

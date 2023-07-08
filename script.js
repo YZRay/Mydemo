@@ -45,4 +45,17 @@ const navLinks = document.querySelector(".nav__links");
 navbarToggle.addEventListener("click", () => {
   navLinks.classList.toggle("collapsed");
 });
-//fade in
+
+// fade in
+const fadeIn = document.querySelectorAll(".fade-in");
+
+const observer = new IntersectionObserver((entries) => {
+  console.log(entries);
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("active", entry.isIntersecting);
+  });
+});
+
+fadeIn.forEach((fadeIn) => {
+  observer.observe(fadeIn);
+});
